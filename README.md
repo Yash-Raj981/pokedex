@@ -1,36 +1,45 @@
-# React Pokédex – Fast, Responsive & Modern
+# React Pokédex
 
-A fully responsive Pokédex built with **React**, **Vite**, **Bootstrap**, and **PokéAPI**.  
-Uses **progressive loading**, **infinite scroll**, **batch fetching**, and **error-proof data normalization**.
+A fast and responsive Pokédex application built with **React**, **Vite**, **Bootstrap**, and the public **PokéAPI**.  
+The project focuses on clean structure, efficient data loading, and a smooth browsing experience across all devices.
 
----
+## Features
 
-## 🚀 Features
+- Progressive loading of Pokémon data  
+- Infinite scroll with safe batching and race-condition prevention  
+- Data normalization for consistent units and naming  
+- Automatic fallback images when primary sprites are unavailable  
+- Deduplication to avoid repeated Pokémon entries  
+- Responsive layout using Bootstrap grid and utilities  
 
-### ✓ Progressive Loading  
-First batch loads instantly. Others load as you scroll.
+## Technology Stack
 
-### ✓ Infinite Scroll (Race-Safe)  
-`useRef()` prevents duplicate loads and batching overlap.
+- **React** (Vite + JSX)
+- **Bootstrap** for layout and styling  
+- **PokéAPI** for real-time Pokémon data  
+- **JavaScript (ES Modules)**
 
-### ✓ Pokémon Data Normalization  
-- Height → meters  
-- Weight → kilograms  
-- Capitalized names  
-- Flattened stats  
+## Getting Started
 
-### ✓ Guaranteed No Duplicate Pokémon  
-Map-based deduplication ensures stable and unique results.
+### 1. Install dependencies
 
-### ✓ Fallback Image Support  
-If Pokémon.com sprite fails, app uses official-artwork sprite.
+```bash
+npm install
+```
 
-### ✓ Fully Responsive with Bootstrap  
-Adaptive card resizing with clean layout.
+### 2. Start the development server
 
----
+```bash
+npm run dev
+```
 
-## 📁 Project Structure
+The app will be available at:
+
+```
+http://localhost:5173/
+```
+
+## Project Structure
 
 ```
 src/
@@ -45,26 +54,25 @@ src/
     (...)
 ```
 
----
+This structure keeps components, service calls, and constants organized for easy maintenance and scalability.
 
-## 🛠 Installation
+## Build for Production
 
+```bash
+npm run build
 ```
-npm install
-npm run dev
-```
 
----
+The optimized output will be located in the `dist` directory.
 
-## 📌 Future Enhancements
-- Search bar
-- Filters (type, stat, region)
-- Shiny toggle
-- Virtualized list for 10,000+ items
-- Local caching
+## Future Enhancements
 
----
+- Search functionality  
+- Filters by type, stats, or region  
+- Shiny Pokémon toggle  
+- Virtualized list for large datasets  
+- Local caching for faster reloads  
 
-## 📜 License
-MIT License
+## License
 
+This project is open for personal and educational use.  
+Feel free to modify and adapt it as needed.
