@@ -1,4 +1,4 @@
-# React Pokédex
+# Pokédex
 
 A fast and responsive Pokédex application built with **React**, **Vite**, **Bootstrap**, and the public **PokéAPI**.  
 The project focuses on clean structure, efficient data loading, and a smooth browsing experience across all devices.
